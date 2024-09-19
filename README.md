@@ -1,3 +1,4 @@
+
 # Estatein
 
 This project is a fully responsive real estate website built using React. The design follows the **exact layout** of the Praha real estate template from the Figma Community, providing a sleek and modern interface for users to explore properties and services.
@@ -18,6 +19,7 @@ This project is a fully responsive real estate website built using React. The de
 - **Context API**: For managing state across the application.
 - **Tailwind CSS**: For fast, efficient, and customizable styling.
 - **Framer Motion**: For adding seamless animations and transitions to the interface.
+
 
 ## Design
 
