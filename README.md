@@ -20,6 +20,8 @@ This project is a fully responsive real estate website built using React. The de
 - **Tailwind CSS**: For fast, efficient, and customizable styling.
 - **Framer Motion**: For adding seamless animations and transitions to the interface.
 
+## Site
+You can visit the site [here](https://estatein-lovat.vercel.app)
 
 ## Design
 
