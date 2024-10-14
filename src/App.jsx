@@ -7,7 +7,6 @@ function App() {
   return <>
     <NavigationComponent/>
     <Outlet/> / 
-    {/* <AboutPage/> */}
     <FooterComponent />
   </>
 }
