@@ -6,7 +6,8 @@ import NavigationComponent from "./components/sharedComponents/NavigationCompone
 function App() {
   return <>
     <NavigationComponent/>
-    <Outlet/>  
+    <Outlet/> / 
+    {/* <AboutPage/> */}
     <FooterComponent />
   </>
 }

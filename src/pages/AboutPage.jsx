@@ -16,12 +16,14 @@ import ClientTestimonyCard from '../components/aboutPage/ClientTestimonyCard'
 import { SectionHeader } from '../components/sharedComponents/SectionHeader'
 import { SectionBody } from '../components/sharedComponents/SectionBody'
 import CtaComponent from "../components/sharedComponents/CtaComponent"
+import { motion } from 'framer-motion'
+import { heroImage, heroInfo } from './HomePage'
 
 export default function AboutPage() {
     return (
         <>
             <section id="about-hero-section" className='flex flex-col-reverse lg:flex-row pt-[50px] lg:pt-[70px] 2xl:pt-[100px] px-[10px] lg:px-[70px] 2xl:px-40'>
-                <div className='mt-4 lg:mt-0 lg:pt-6 lg:w-1/2 lg:pr-[60px]'>
+                <motion.div variants={heroInfo} initial={'hidden'} whileInView={'show'} viewport={{once:true}} className='mt-4 lg:mt-0 lg:pt-6 lg:w-1/2 lg:pr-[60px]'>
                     <StarsDesign />
                     <h1 className='font-semibold text-2xl lg:text-[38px] mt-px lg:mt-2 mb-2 lg:mb-[10px] px-[6px] lg:pl-[10px]'>
                         Our Journey
@@ -33,10 +35,10 @@ export default function AboutPage() {
                     <div className='lg:pl-[10px]'>
                         <StatsCard />
                     </div>
-                </div>
-                <div className='lg:w-1/2 lg:h-[435/px] px-[6px] lg:pr-[10px]'>
+                </motion.div>
+                <motion.div variants={heroImage} initial={'hidden'} whileInView={'show'} viewport={{once:true}} className='lg:w-1/2 lg:h-[435/px] px-[6px] lg:pr-[10px]'>
                     <img src={aboutHeroImg} className='h-full w-full object-contain' alt="" />
-                </div>
+                </motion.div>
             </section>
             <section id='values-section' className='w-full mt-[60px] lg:mt-[120px] px-[10px] lg:px-[70px] flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-[60px]' >
                 <div className="lg:w-1/2">
@@ -88,7 +90,7 @@ export default function AboutPage() {
                         At Estatein, we&apos;ve designed a straightforward process to help you find and purchase your dream property with ease. Here&apos;s a step-by-step guide to how it all works.
                     </SectionHeader>
                 </div>
-                <div id='steps-container' className='px-[10px] grid md:grid-cols-2 xl:grid-cols-3 gap-[30px] lg:gap-5 place-items-stretch'>
+                <div id='steps-container' className='px-[10px] grid md:grid-cols-2 xl:grid-cols-3 gap-[30px] lg:gap-5 place-items-stretch xl:py-4'>
                     <StepsCard step={'01'} heading={'Discover a World of Possibilities'}>
                         Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location, type, size, and budget.
                     </StepsCard>
@@ -109,7 +111,7 @@ export default function AboutPage() {
                     </StepsCard>
                 </div>
             </section>
-            <section id='team-section' className='mt-[60px] lg:mt-[90px] px-[10px] lg:px-[70px] border'>
+            <section id='team-section' className='mt-[60px] lg:mt-[90px] px-[10px] lg:px-[70px]'>
                 <div className='lg:w-[83%]'>
                     <SectionHeader heading={'Meet the Estatein Team'}>
                         At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality
@@ -122,7 +124,7 @@ export default function AboutPage() {
                     <TeamMemberCard teamMemberName={'Michael Turner'} teamMemberPic={teamFour} teamMemberRole={'Legal Counsel'} />
                 </div>
             </section>
-            <section id='client-section' className='mt-[60px] lg:mt-[90px] px-[10px] lg:px-[70px] border'>
+            <section id='client-section' className='mt-[60px] lg:mt-[90px] px-[10px] lg:px-[70px]'>
                 <div className='lg:w-[83%]'>
                     <SectionHeader heading={'Our Valued Clients'}>
                         At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we&apos;ve had the pleasure of serving
