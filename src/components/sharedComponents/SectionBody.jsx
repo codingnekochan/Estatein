@@ -24,7 +24,7 @@ export function SectionBody({ children, id, currentIndex, totalLength }) {
                 whileInView={'show'}
                 viewport={{ once: true }}
                 id={id}
-                className='section-body min-w-full flex overflow-x-hidden gap-4 lg:gap-5 py-4 px-2'
+                className='section-body min-w-full flex overflow-x-hidden gap-4 justify-between lg:gap-5 py-4 px-2'
             >
                 {children}
             </motion.section>

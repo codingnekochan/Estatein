@@ -50,15 +50,21 @@ p {
     rgba(38, 38, 38, 1) 25%
   );
 }
+
+.properties-hero-section{
+  background: linear-gradient(95.93deg, #262626 -26.82%, rgba(38, 38, 38, 0) 40.46%);
+
+}
 @media (min-width: 1024px) {
   .center-line::before {
     height: 1px;
     width: 100%;
+    background: url('./assets/Icondropdown.svg');
   }
   .active {
     border: 1px solid #262626;
     border-radius: 8px;
     background: #141414 ;
-    padding :12px 16px
+    padding :14px 24px
   }
 }

@@ -24,16 +24,16 @@ export default function NavigationComponent() {
                 </p>
                 <a href="#" className="underline decoration-gray-500">Learn More</a>
             </div>
-            <button id="close-banner" className='w-6 h-6 bg-[#1A1A1A] rounded-full lg:relative right-[-27%]' onClick={()=> setIsDisplayed(false)}>
+            <button id="close-banner" className='w-6 2xl:w-8 h-6 2xl:h-8 bg-[#1A1A1A] rounded-full lg:absolute right-[16px] lg:right-[32px]' onClick={()=> setIsDisplayed(false)}>
                 <img src={cancelButton} alt='remove banner' />
             </button>
         </section>
         }
-        <nav id="navigation" className="h-full relative flex justify-between px-4 py-5 lg:px-20 lg:py-4 border-b border-[#262626] items-center">
+        <nav id="navigation" className="h-full relative flex justify-between px-4 py-5 lg:px-20 lg:py-[14px] border-b border-[#262626] items-center">
             <div>
-                <img src={companyLogo} alt="company logo" />
+                <img src={companyLogo} alt="company logo" className='h-7 lg:h-[34px] 2xl:h-full' />
             </div>
-            <div className={`z-20 bg-[#141414] lg:bg-[#1A1A1AF4] pt-10 lg:pt-0 h-[100vh] lg:h-full w-full lg:w-[67%] lg:block absolute lg:static top-0 left-0 fl/ex justify-center items-center ${isOpen ? '' : 'hidden'}`}>
+            <div className={`z-20 bg-[#141414] lg:bg-[#1A1A1AF4] pt-10 lg:pt-0 h-[100vh] lg:h-full w-full lg:w-[67%] lg:block absolute lg:static top-0 left-0 justify-center items-center ${isOpen ? '' : 'hidden'}`}>
                 <ul className=' flex flex-col lg:flex-row items-center lg:justify-between gap-6'>
                     <div className='flex flex-col lg:flex-row items-center justify-between gap-6'>
                         <RouteLink link={'/'} linkName={'Home'} isOpen = {()=>setIsOpen(false)} />

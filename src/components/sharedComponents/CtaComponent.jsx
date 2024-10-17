@@ -5,7 +5,7 @@ export default function CtaComponent() {
             <h2 className="text-[28px] lg:text-[38px] font-semibold">
                 Start Your Real Estate Journey Today
             </h2>
-            <p className="text-sm text-base text-[#999999] mb-[30px] lg:mb-0">
+            <p className="text-sm lg:text-base text-[#999999] mb-[30px] lg:mb-0">
                 Your dream property is just a click away.
                 Whether you&apos;re looking for a new home, a strategic investment,
                 or expert real estate advice, Estatein is here to assist you every step of the way.

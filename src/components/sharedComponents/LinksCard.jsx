@@ -6,7 +6,7 @@ export function LinksCard({ cardIcon, children, link }) {
         <a href={link}>
             <div className='info text-center flex flex-col justify-center items-center gap-[14px]'>
                 <div className='w-12 '><img src={cardIcon} alt="" /></div>
-                <p>{children}</p>
+                <span>{children}</span>
             </div>
             <div className='icon absolute top-5 right-5'>
                 <img src={iconArrowUp} alt="" />

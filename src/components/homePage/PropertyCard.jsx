@@ -2,10 +2,11 @@ import PropTypes from 'prop-types'
 import iconBathroom from '/src/assets/Iconbathroom.svg'
 import iconBedroom from '/src/assets/Iconbedroom.svg'
 import iconVilla from '/src/assets/Iconvilla.svg'
+import { PropertyDetailsButton } from '../sharedComponents/ButtonsComponent'
 
 export default function PropertyCard({ propertyImage, bedroom, bathroom, propertyType, children, price }) {
    
-    return <div id='property-card' className='border border-[#262626] flex-shrink-0 lg:flex-shrink p-6 w-full md:w-[48%] h-full rounded-xl'>
+    return <div id='property-card' className='border border-[#262626] flex flex-col justify-between flex-shrink-0 lg:flex-shrink p-6 w-full md:w-[48%] rounded-xl'>
         <div id='property-img' className='mb-4'>
             <img src={propertyImage} alt="" />
         </div>
@@ -32,7 +33,7 @@ export default function PropertyCard({ propertyImage, bedroom, bathroom, propert
                         <br />
                         <span className="text-white text-semibold text-lg lg:text-[20px]">{price}</span>
                     </p>
-                    <button className='px-[30px] py-[14px] bg-[#703BF7] rounded-lg text-sm'>View Property Details</button>
+                   <PropertyDetailsButton/>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ import socials from '../../assets/socials-icon.svg'
 
 export default function FooterComponent() {
     return <>
-        <section className='flex max-md:flex-col justify-between md:gap-[80px] lg:gap-[150px] px-4 lg:px-20 py-[50px] lg:py-20 '>
+        <section className='primary-footer flex max-md:flex-col justify-between md:gap-[80px] lg:gap-[150px] px-4 lg:px-20 py-[50px] lg:py-20 '>
             <div className=' max-md:mb-[50px]'>
                 <div className='w-[113px] 2xl:w-[160px] mb-5 lg:mb-6'>
                     <img src={companyLogo} alt="company logo" />
@@ -50,7 +50,7 @@ export default function FooterComponent() {
                 </FooterItems>
             </section>
         </section>
-        <section className='bg-[#1A1A1A] flex flex-col justify-between items-center gap-2 lg:flex-row px-4 lg:px-40 py-5 lg:py-4'>
+        <section className='secondary-footer bg-[#1A1A1A] flex flex-col justify-between items-center gap-2 lg:flex-row px-4 lg:px-40 py-5 lg:py-4'>
             <div id='copyrights' className='max-md:order-2 text-center lg:flex lg:gap-9'>
                 <p>@2023 Estatein. All Rights Reserved.</p>
                 <a href="#">Terms & Conditions</a>

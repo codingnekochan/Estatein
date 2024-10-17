@@ -124,7 +124,7 @@ export default function AboutPage() {
                     <TeamMemberCard teamMemberName={'Michael Turner'} teamMemberPic={teamFour} teamMemberRole={'Legal Counsel'} />
                 </div>
             </section>
-            <section id='client-section' className='mt-[60px] lg:mt-[90px] px-[10px] lg:px-[70px]'>
+            <section id='client-section' className='mt-[60px] lg:mt-[90px] px-[10px] lg:px-[70px] mb-20 lg:mb-[120px]'>
                 <div className='lg:w-[83%]'>
                     <SectionHeader heading={'Our Valued Clients'}>
                         At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we&apos;ve had the pleasure of serving
