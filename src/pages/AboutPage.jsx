@@ -1,3 +1,4 @@
+// image/icon imports
 import aboutHeroImg from '../assets/about-hero-desktop.png'
 import iconTrust from '../assets/Icontrust.svg'
 import iconExcellence from '../assets/Iconexcellence.svg'
@@ -8,22 +9,24 @@ import teamOne from '../assets/Imageteam1.png'
 import teamTwo from '../assets/Imageteam2.png'
 import teamThree from '../assets/Imageteam3.png'
 import teamFour from '../assets/Imageteam4.png'
+// page specific imports
 import TeamMemberCard from '../components/aboutPage/TeamMemberCard'
 import StepsCard from '../components/aboutPage/StepsCard'
 import AchievementsCard from '../components/aboutPage/AchievementCard'
 import CompanyValueCard from '../components/aboutPage/CompanyValueCard'
 import ClientTestimonyCard from '../components/aboutPage/ClientTestimonyCard'
+// shared component imports
 import { SectionHeader } from '../components/sharedComponents/SectionHeader'
 import { SectionBody } from '../components/sharedComponents/SectionBody'
-import CtaComponent from "../components/sharedComponents/CtaComponent"
+// framer imports
 import { motion } from 'framer-motion'
-import { heroImage, heroInfo } from './HomePage'
+import { heroImage, heroInfo } from '../utils/framer'
 
 export default function AboutPage() {
     return (
         <>
             <section id="about-hero-section" className='flex flex-col-reverse lg:flex-row pt-[50px] lg:pt-[70px] 2xl:pt-[100px] px-[10px] lg:px-[70px] 2xl:px-40'>
-                <motion.div variants={heroInfo} initial={'hidden'} whileInView={'show'} viewport={{once:true}} className='mt-4 lg:mt-0 lg:pt-6 lg:w-1/2 lg:pr-[60px]'>
+                <motion.div variants={heroInfo} initial={'hidden'} whileInView={'show'} viewport={{ once: true }} className='mt-4 lg:mt-0 lg:pt-6 lg:w-1/2 lg:pr-[60px]'>
                     <StarsDesign />
                     <h1 className='font-semibold text-2xl lg:text-[38px] mt-px lg:mt-2 mb-2 lg:mb-[10px] px-[6px] lg:pl-[10px]'>
                         Our Journey
@@ -36,8 +39,8 @@ export default function AboutPage() {
                         <StatsCard />
                     </div>
                 </motion.div>
-                <motion.div variants={heroImage} initial={'hidden'} whileInView={'show'} viewport={{once:true}} className='lg:w-1/2 lg:h-[435/px] px-[6px] lg:pr-[10px]'>
-                    <img src={aboutHeroImg} className='h-full w-full object-contain' alt="about hero section image" loading='eager' />
+                <motion.div variants={heroImage} initial={'hidden'} whileInView={'show'} viewport={{ once: true }} className='lg:w-1/2 lg:h-[435/px] px-[6px] lg:pr-[10px]'>
+                    <img src={aboutHeroImg} className='h-full w-full object-contain' alt="about hero section image" />
                 </motion.div>
             </section>
             <section id='values-section' className='w-full mt-[60px] lg:mt-[120px] px-[10px] lg:px-[70px] flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-[60px]' >
@@ -139,8 +142,6 @@ export default function AboutPage() {
                     </ClientTestimonyCard>
                 </SectionBody>
             </section>
-            <CtaComponent />
-
         </>
     )
 }

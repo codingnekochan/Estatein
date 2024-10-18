@@ -1,3 +1,4 @@
+// image/icon imports
 import homeHeroImg from '../assets/Containerhome-hero-desktop.png'
 import rotatingLogo from '../assets/Containercirclelogodsktop.svg'
 import iconFindHome from '../assets/Icon-find-home.svg'
@@ -10,44 +11,19 @@ import propertyImageThree from '../assets/Imagepropty-3.png'
 import profilePicOne from '../assets/Profile1.png'
 import profilePicTwo from '../assets/Profile2.png'
 import profilePicThree from '../assets/Profile3.png'
-import { LinksCard } from '../components/sharedComponents/LinksCard'
+// page specific imports
 import PropertyCard from '../components/homePage/PropertyCard'
 import ReviewCard from '../components/homePage/ReviewCard'
 import HomeSection from '../components/homePage/HomeSection'
-import { HomeSectionHeader } from '../components/homePage/HomeSectionHeader'
-import { SectionBody } from '../components/sharedComponents/SectionBody'
 import FaqsCard from '../components/homePage/FaqsCard'
 import StatsCard from '../components/sharedComponents/StatsCard'
-import CtaComponent from "../components/sharedComponents/CtaComponent"
+import { HomeSectionHeader } from '../components/homePage/HomeSectionHeader'
+// shared component imports
+import { SectionBody } from '../components/sharedComponents/SectionBody'
+import { LinksCard } from '../components/sharedComponents/LinksCard'
+// framer imports
 import { motion } from 'framer-motion'
-
-export const heroInfo = {
-    hidden: { x: -300 },
-    show: {
-        x: 0,
-        transition: {
-            type: 'spring',
-            bounce: 0.1,
-            duration: 2,
-            ease: 'easeIn'
-        }
-
-    }
-}
-export const heroImage = {
-    hidden: { x: 300, opacity: 0 },
-    show: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            type: 'spring',
-            bounce: 0.1,
-            duration: 2,
-            ease: 'easeIn'
-        }
-
-    }
-}
+import { heroImage, heroInfo } from '../utils/framer'
 
 export default function HomePage() {
   
@@ -85,7 +61,7 @@ export default function HomePage() {
                     <img src={rotatingLogo} className='w-full h-full object-cover' alt="" />
                 </motion.div>
                 <motion.div variants={heroImage} initial='hidden' whileInView={'show'} viewport={{once:true}} id='home-hero-img' className='w-full h-[302px] md:h-auto lg:w-[48%]'>
-                    <img src={homeHeroImg} className='w-full h-full rounded-xl lg:rounded-none' alt="landing page hero section image" loading='eager' />
+                    <img src={homeHeroImg} className='w-full h-full rounded-xl lg:rounded-none' alt="landing page hero section image"/>
                 </motion.div>
             </section>
             <section
@@ -193,7 +169,6 @@ export default function HomePage() {
                     </FaqsCard>
                 </SectionBody>
             </HomeSection>
-            <CtaComponent/>
         </>
     )
 }

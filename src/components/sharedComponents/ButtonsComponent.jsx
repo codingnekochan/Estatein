@@ -17,7 +17,7 @@ export function FilterButton({ name, id, filterIcon }) {
 }
 
 export function LearnMoreButton({ link }) {
-    return <button>
+    return <button className='border w-full border-[#262626] bg-[#141414] rounded-lg px-5 py-[14px] text-sm lg:text-base col-span-full lg:col-span-1'>
         <a href={link}>Learn More</a>
     </button>
 }

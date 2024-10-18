@@ -8,6 +8,7 @@ import UtilityPage from './pages/UtilityPage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import PropertiesPage from './pages/PropertiesPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
+import ServicesPage from './pages/ServicesPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'services',
-        element: <UtilityPage />
+        element: <ServicesPage />
       },
       {
         path: 'contact',

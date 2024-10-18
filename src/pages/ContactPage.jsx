@@ -24,11 +24,11 @@ import StarsDesign from "../components/sharedComponents/StarsDesign";
 
 export default function ContactPage() {
     return <>
-        <section id="contact-hero-section" className="contact-hero-section px-4 md:px-10 lg:px-20 py-[50px] md:py-[75px] lg:pt-[150px]  lg:pb-[100px] 2xl:pb-40 border-b border-b-[#262626]">
+        <section id="contact-hero-section" className="contact-hero-section px-4 md:px-10 lg:px-20 py-[50px] md:py-[75px] lg:py-[100px] border-b border-b-[#262626]">
             <h1 className="font-semibold text-[28px] lg:text-[38px] 2xl:text-5xl mb-[10px] 2xl:mb-[14px]">
                 Get in Touch with Estatein
             </h1>
-            <p className="lg:w-[89%] text-[#999999] text-sm lg:text-base 2xl:text-lg">
+            <p className="lg:w-[92%] text-[#999999] text-sm lg:text-base 2xl:text-lg">
                 Welcome to Estatein&apos;s Contact Us page. We&apos;re here to assist you with any inquiries, requests, or feedback you may have. <span className="max-md:hidden">
                     Whether you&apos;re looking to buy or sell a property, explore investment opportunities, or simply want to connect, we&apos;re just a message away. Reach out to us, and let&apos;s start a conversation.
                 </span>
@@ -112,6 +112,5 @@ export default function ContactPage() {
                 <div className="image col-span-full md:col-span-2"><img src={imageSix} alt="gallery image six" className="w-full h-full object-contain" /></div>
             </div>
         </section>
-        <CtaComponent />
     </>
 }

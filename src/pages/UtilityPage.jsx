@@ -1,5 +1,5 @@
 import underConstruction from '../assets/under-construction.png'
-import { heroImage, heroInfo } from './HomePage'
+import { heroImage,heroInfo } from '../utils/framer'
 import { motion } from "framer-motion"
 
 export default function UtilityPage() {

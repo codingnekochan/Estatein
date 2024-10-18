@@ -6,7 +6,7 @@ export function SectionHeader({ heading, children}) {
             <h2 className="font-bold text-[28px] xl:text-[38px] capitalize lg:mt-[3px] lg:mb-[10px]" >
                 {heading}
             </h2>
-            <p className="text-sm lg:text-base text-[#999999] mb-10 lg:mb-[60px] p-px">
+            <p className="md:w-[90%] text-sm lg:text-base text-[#999999] mb-10 lg:mb-[60px] p-px">
                 {children}
             </p>
         </div>

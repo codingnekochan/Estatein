@@ -31,14 +31,14 @@ export function SectionBody({ children, id, currentIndex, totalLength }) {
             <div className='h-[1px] bg-[#262626] w-full mt-7 mb-10'></div>
             <div className='list-length flex justify-end'>
                 <div className='flex  gap-3 items-center pb-1 pr-2'>
-                    <button className='w-[44px] h-[44px] border rounded-full p-2' aria-labelledby='back button'>
-                        <img src={backButton} className='w-full h-full object-contain' alt="" />
+                    <button className='w-[44px] h-[44px] border rounded-full p-2' aria-label='back button'>
+                        <img src={backButton} className='w-full h-full object-contain' alt="back button icon" />
                     </button>
                     <p>
                         <span>{currentIndex}</span> of <span>{totalLength}</span>
                     </p>
-                    <button className='w-[44px] h-[44px] border rounded-full p-2' aria-labelledby='forward button'>
-                        <img src={forwardButton} className='w-full h-full object-contain' alt="" />
+                    <button className='w-[44px] h-[44px] border rounded-full p-2' aria-label='forward button'>
+                        <img src={forwardButton} className='w-full h-full object-contain' alt="forward button icon" />
                     </button>
                 </div>
             </div>
