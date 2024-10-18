@@ -1,20 +1,24 @@
-import { LinksCard } from "../components/sharedComponents/LinksCard";
+// image imports
 import iconEmail from '../assets/Icon-contact-email.svg'
 import iconTelephone from '../assets/Icon-contact-phone.svg'
 import iconLocation from '../assets/Icon-contact-location.svg'
 import iconSocials from '../assets/Icon-contact-social.svg'
-import { SectionHeader } from "../components/sharedComponents/SectionHeader";
-import InputComponent from "../components/sharedComponents/InputComponent";
-import TextAreaComponent from "../components/sharedComponents/TextAreaComponent";
-import TermsComponent from "../components/sharedComponents/TermsComponent";
-import { SelectInquiryComponent, SelectReferralComponent } from "../components/contactPage/ContactFormComponents";
-import AddressCard from "../components/contactPage/AddressCard";
 import imageOne from '../assets/Imagegallery1.png'
 import imageTwo from '../assets/Imagegallery2.png'
 import imageThree from '../assets/Imagegallery3.png'
 import imageFour from '../assets/Imagegallery4.png'
 import imageFive from '../assets/Imagegallery5.png'
 import imageSix from '../assets/Imagegallery6.png'
+// shared component imports
+import { SectionHeader } from "../components/sharedComponents/SectionHeader";
+import InputComponent from "../components/sharedComponents/InputComponent";
+import TextAreaComponent from "../components/sharedComponents/TextAreaComponent";
+import TermsComponent from "../components/sharedComponents/TermsComponent";
+import { LinksCard } from "../components/sharedComponents/LinksCard";
+// page specific imports
+import { SelectInquiryComponent, SelectReferralComponent } from "../components/contactPage/ContactFormComponents";
+import AddressCard from "../components/contactPage/AddressCard";
+
 import CtaComponent from "../components/sharedComponents/CtaComponent";
 import StarsDesign from "../components/sharedComponents/StarsDesign";
 
