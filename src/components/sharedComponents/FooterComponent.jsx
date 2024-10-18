@@ -64,7 +64,7 @@ export default function FooterComponent() {
 
 export function FooterItems({ heading, children, classList }) {
     return <div className={classList}>
-        <h5 className="text-[#999999] mb-4 text-base lg:text-lg">{heading}</h5>
+        <h4 className="text-[#999999] mb-4 text-base lg:text-lg">{heading}</h4>
         <ul className='flex flex-col gap-2 lg:gap-4 pb-4 lg:pb-0 font-medium text-sm lg:text-base'>
             {children}
         </ul>

@@ -34,19 +34,19 @@ export default function NavigationComponent() {
                 <img src={companyLogo} alt="company logo" className='h-7 lg:h-[34px] 2xl:h-full' />
             </div>
             <div className={`z-20 bg-[#141414] lg:bg-[#1A1A1AF4] pt-10 lg:pt-0 h-[100vh] lg:h-full w-full lg:w-[67%] lg:block absolute lg:static top-0 left-0 justify-center items-center ${isOpen ? '' : 'hidden'}`}>
-                <ul className=' flex flex-col lg:flex-row items-center lg:justify-between gap-6'>
-                    <div className='flex flex-col lg:flex-row items-center justify-between gap-6'>
+                <div className=' flex flex-col lg:flex-row items-center lg:justify-between gap-6'>
+                    <ul className='flex flex-col lg:flex-row items-center justify-between gap-6'>
                         <RouteLink link={'/'} linkName={'Home'} isOpen = {()=>setIsOpen(false)} />
                         <RouteLink link={'about'} linkName={'About Us'} isOpen={() => setIsOpen(false)} />
                         <RouteLink link={'properties'} linkName={'Properties'} isOpen={() => setIsOpen(false)} />
                         <RouteLink link={'services'} linkName={'Services'} isOpen={() => setIsOpen(false)} />
-                    </div>
-                    <div className='lg:bg-[#141414] lg:border lg:border-[#262626] lg:rounded-lg'>
+                    </ul>
+                    <ul className='lg:bg-[#141414] lg:border lg:border-[#262626] lg:rounded-lg'>
                         <li className='px-5 py-3' onClick={()=>setIsOpen(false)}>
                             <Link to={'contact'}>Contact Us</Link>
                         </li>
-                    </div>
-                </ul>
+                    </ul>
+                </div>
             </div>
             <button className="hamburger-menu lg:hidden z-20" onClick={handleIsOpen}>
                {isOpen === false ? <img src={hamburgerMenu} alt="open Menu" />
