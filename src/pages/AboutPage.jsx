@@ -37,7 +37,7 @@ export default function AboutPage() {
                     </div>
                 </motion.div>
                 <motion.div variants={heroImage} initial={'hidden'} whileInView={'show'} viewport={{once:true}} className='lg:w-1/2 lg:h-[435/px] px-[6px] lg:pr-[10px]'>
-                    <img src={aboutHeroImg} className='h-full w-full object-contain' alt="" />
+                    <img src={aboutHeroImg} className='h-full w-full object-contain' alt="about hero section image" loading='eager' />
                 </motion.div>
             </section>
             <section id='values-section' className='w-full mt-[60px] lg:mt-[120px] px-[10px] lg:px-[70px] flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-[60px]' >

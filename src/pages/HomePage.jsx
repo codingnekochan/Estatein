@@ -85,7 +85,7 @@ export default function HomePage() {
                     <img src={rotatingLogo} className='w-full h-full object-cover' alt="" />
                 </motion.div>
                 <motion.div variants={heroImage} initial='hidden' whileInView={'show'} viewport={{once:true}} id='home-hero-img' className='w-full h-[302px] md:h-auto lg:w-[48%]'>
-                    <img src={homeHeroImg} className='w-full h-full rounded-xl lg:rounded-none' alt="" />
+                    <img src={homeHeroImg} className='w-full h-full rounded-xl lg:rounded-none' alt="landing page hero section image" loading='eager' />
                 </motion.div>
             </section>
             <section

@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage.jsx'
 import UtilityPage from './pages/UtilityPage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import PropertiesPage from './pages/PropertiesPage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'contact',
-        element: <UtilityPage />
+        element: <ContactPage/>
       },
     ]
   },

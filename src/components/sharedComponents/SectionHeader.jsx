@@ -1,5 +1,5 @@
 import StarsDesign from "./StarsDesign"
-export function SectionHeader({ heading, children }) {
+export function SectionHeader({ heading, children}) {
     return <div>
         <StarsDesign />
         <div className="px-[6px] lg:px-[10px] w-[97%] lg:w-full">
